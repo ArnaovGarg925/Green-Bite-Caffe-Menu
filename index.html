@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreenBite Café</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="top-controls">
+      <button class="dark-toggle" onclick="toggleDark()">Toggle Dark Mode</button>
+      <input type="text" id="search" class="search-bar" placeholder="Search dishes..." oninput="filterMenu()" />
+      <select id="category" class="category-filter" onchange="filterMenu()">
+        <option value="">All</option>
+        <option value="South">South Indian</option>
+        <option value="North">North Indian</option>
+        <option value="Chinese">Chinese</option>
+      </select>
+    </div>
+    <h1>🌱 Welcome to GreenBite Café</h1>
+    <marquee behavior="scroll" direction="left">✨ Try our new Spring Rolls and Manchurian Combo! | Contact: +91-9876543210 for bulk orders or catering ✨</marquee>
+  </header>
+  <section class="menu" id="menu"></section>
+  <div class="cart-summary" id="cart-summary">Cart Total: ₹0</div>
+  <div class="cart-summary" id="cart-items"></div>
+  <div class="cart-footer" id="checkout-bar">🛒 Checkout • Total: ₹0</div>
+  <script src="script.js"></script>
+</body>
+</html>
